@@ -6,7 +6,7 @@ azure:
       client-id: 4473a139-ff8f-44d5-9dea-34a9e67cddfc
       client-secret: f=SW4|g15%/|0E46/9A2\59t
       reply-url: https://simplain-demo.azurewebsites.net/home # should be absolute url.
-      logout-success-url: https://simplain-demo.azurewebsites.net/logout
+      logout-success-url: https://simplain-demo.azurewebsites.net/
       user-flows:
         sign-up-or-sign-in: B2C_1_signinup
         profile-edit: B2C_1_profile     # optional
