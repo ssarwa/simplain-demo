@@ -1,4 +1,4 @@
-package azuresimplainspringboot.Simplaindemo.controller;
+package azuresimplainspringboot.Simplaindemo;
 
 import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
 import org.springframework.security.oauth2.core.user.OAuth2User;
@@ -30,6 +30,11 @@ public class WebController {
         initializeModel(model, token);
 
         return "greeting";
+    }
+
+    @GetMapping(value = "/logout")
+    public String logout() {
+        return "logout";
     }
 
     @GetMapping(value = "/home")

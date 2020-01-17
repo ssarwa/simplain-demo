@@ -1,4 +1,4 @@
-package azuresimplainspringboot.Simplaindemo.security;
+package azuresimplainspringboot.Simplaindemo;
 
 import com.microsoft.azure.spring.autoconfigure.b2c.AADB2COidcLoginConfigurer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
