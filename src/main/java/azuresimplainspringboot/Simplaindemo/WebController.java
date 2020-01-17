@@ -32,11 +32,6 @@ public class WebController {
         return "greeting";
     }
 
-    @GetMapping(value = "/logout")
-    public String logout() {
-        return "logout";
-    }
-
     @GetMapping(value = "/home")
     public String home(Model model, OAuth2AuthenticationToken token) {
         initializeModel(model, token);
