@@ -2,44 +2,23 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "subscriptionId": {
-            "value": "12bb4e89-4f7a-41e0-a38f-b22f079248b4"
-        },
-        "name": {
+        "webAppName": {
             "value": "linuxappsr"
         },
         "location": {
             "value": "West US"
         },
-        "hostingEnvironment": {
-            "value": ""
-        },
-        "hostingPlanName": {
-            "value": "Linux-App-Plan"
-        },
-        "serverFarmResourceGroup": {
-            "value": "Simplain-RG"
-        },
-        "alwaysOn": {
-            "value": true
-        },
-        "sku": {
-            "value": "PremiumV2"
-        },
-        "skuCode": {
-            "value": "P1v2"
-        },
-        "workerSize": {
-            "value": "3"
-        },
-        "workerSizeId": {
-            "value": "3"
-        },
-        "numberOfWorkers": {
-            "value": "1"
+        "sku":{
+            "value" : "S1"
         },
         "linuxFxVersion": {
             "value": "JAVA|11-java11"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "simplainrgsrdiag"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
         },
         "networkInterfaceName": {
             "value": "oraclevm680"
@@ -97,9 +76,6 @@
         "virtualMachineName": {
             "value": "oraclevm"
         },
-        "virtualMachineRG": {
-            "value": "Simplain-RG"
-        },
         "osDiskType": {
             "value": "Premium_LRS"
         },
@@ -111,18 +87,6 @@
         },
         "adminPassword": {
             "value": null
-        },
-        "diagnosticsStorageAccountName": {
-            "value": "simplainrgdiag"
-        },
-        "diagnosticsStorageAccountId": {
-            "value": "Microsoft.Storage/storageAccounts/simplainrgdiag"
-        },
-        "diagnosticsStorageAccountType": {
-            "value": "Standard_LRS"
-        },
-        "diagnosticsStorageAccountKind": {
-            "value": "Storage"
         }
     }
 }
